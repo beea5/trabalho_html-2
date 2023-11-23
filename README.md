@@ -1,6 +1,6 @@
 ## Segunda Parte do Trabalho: API e Visualização de Formulários
 
-Nesta etapa, abordaremos a implementação da API e a visualização do formulário enviado, conforme discutido no [arquivo anterior](https://github.com/beea5/trabalho_html/blob/main/README.md?plain=1#participantes).
+Nesta etapa, abordaremos a implementação da API e a visualização do formulário enviado, conforme discutido no [arquivo anterior](https://github.com/beea5/trabalho_html).
 
 
 ## Participantes
