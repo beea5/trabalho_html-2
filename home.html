@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet" />
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://beea5.github.io/trabalho_html/">
+                    <img src="imgs/lotus-flower100px.png" alt="lotus" />
+                </a>
+        </nav>
+    </header>
+
+    <h1>Dados Recebidos</h1>
+
+    <p>Nome: <span id="nomeDestino"></span></p>
+    <p>E-mail: <span id="emailDestino"></span></p>
+    <p>Telefone 1: <span id="telefone1Destino"></span></p>
+    <p>Telefone 2: <span id="telefone2Destino"></span></p>
+    <p>Data: <span id="dataDestino"></span></p>
+    <p>Número de Pessoas: <span id="npessoasDestino"></span></p>
+    <p>Observações: <span id="observacoesDestino"></span></p>
+
+    <script>
+        // Obter os valores armazenados no localStorage
+        var nome = localStorage.getItem("nome");
+        var email = localStorage.getItem("email");
+        var telefone1 = localStorage.getItem("telefone1");
+        var telefone2 = localStorage.getItem("telefone2");
+        var data = localStorage.getItem("data");
+        var npessoas = localStorage.getItem("npessoas");
+        var observacoes = localStorage.getItem("observacoes");
+
+        // Exibir os valores na página
+        document.getElementById("nomeDestino").innerText = nome;
+        document.getElementById("emailDestino").innerText = email;
+        document.getElementById("telefone1Destino").innerText = telefone1;
+        document.getElementById("telefone2Destino").innerText = telefone2;
+        document.getElementById("dataDestino").innerText = data;
+        document.getElementById("npessoasDestino").innerText = npessoas;
+        document.getElementById("observacoesDestino").innerText = observacoes;
+    </script>
+
+
+  <footer>
+    <div class="grid-item gridImgC">
+        <img src="imgs/lotus-flower100px.png" alt="Logo" />
+        <p>Há muitas variações de passagens de Lorem Ipsum disponíveis, mas a maioria sofreu alguma forma de alteração, por meio de humor injetado</p>
+    </div>
+    <div class="grid-item contact-info">
+        <h3 id="pages_contact"> Entre em Contato</h3>  
+                <p>Telefone: +92 (88)456-4567</p>
+                <p>Endereço: Rua ABC Fake Street</p>
+                <p>Horário: das 15h às 21h</p>
+    </div>
+  </footer>
+  <div class="final">
+    <div class="direitos">Exist &copy; All Rights Reserved</div>
+  </div>
+  </html>
